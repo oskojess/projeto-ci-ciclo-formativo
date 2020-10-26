@@ -21,7 +21,7 @@ jobs:
         run: npm test
 
       - name: Run Coverage
-        run: npm coverage
+        run: npm run coverage
       
       
 
