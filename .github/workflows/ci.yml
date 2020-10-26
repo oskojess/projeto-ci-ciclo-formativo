@@ -5,24 +5,23 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      -name: Checkout Repository
-      -uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-      -name: Setup Node
-      -uses: actions/node-version@v1
-      with: 
-        node-version: 12.x
+      - name: Setup Node
+        uses: actions/node-version@v1
+        with: 
+          node-version: 12.x
 
-      -name: Install dependencies
-      -run: npm install 
+      - name: Install dependencies
+        run: npm install 
 
-      -name: Run Testes
-      -run: npm test
+      - name: Run Testes
+        run: npm test
 
-      -name: Run Coverage
-      -run: npm coverage
+      - name: Run Coverage
+        run: npm coverage
       
       
 
