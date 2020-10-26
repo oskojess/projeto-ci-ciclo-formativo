@@ -1,7 +1,7 @@
 const saudacao = require('./teste')
 
 describe('', () => {
-  it('', () => {
+  it('Saudações', () => {
       expect(saudacao('Olá')).toBe('Olá');
   })
 })
