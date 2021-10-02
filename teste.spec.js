@@ -6,6 +6,6 @@ describe('', () => {
     });
 
     it('Errado', () => {
-        expect(saudacao('Oi').toBe('Oi'))
+        expect(saudacao('Oi')).toBe('Oi');
     })
 })
